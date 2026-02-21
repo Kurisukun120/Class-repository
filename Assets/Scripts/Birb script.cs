@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class Birbscript : MonoBehaviour
 {   
     public PlayerInput playerInput;
@@ -22,10 +23,7 @@ public class Birbscript : MonoBehaviour
         if (collision.tag == "Enemy")
         {
             Destroy(gameObject);
-        }
-        else if (collision.tag == "Goal")
-        {
-
+            SceneManager.LoadScene("Gameover");
         }
     }
 }

@@ -6,7 +6,7 @@ public class EnemyScript : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, 5.0f);
+        Destroy(gameObject, 10.0f);
     }
 
     // Update is called once per frame
